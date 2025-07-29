@@ -8,15 +8,10 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-pink-700: oklch(52.5% 0.223 3.958);
     --spacing: 0.25rem;
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
@@ -227,23 +222,11 @@
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
-  .ml-10 {
-    margin-left: calc(var(--spacing) * 10);
-  }
-  .ml-15 {
-    margin-left: calc(var(--spacing) * 15);
-  }
-  .ml-26 {
-    margin-left: calc(var(--spacing) * 26);
-  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
-  }
-  .table {
-    display: table;
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -275,14 +258,8 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-30 {
     width: calc(var(--spacing) * 30);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
@@ -307,12 +284,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -343,10 +314,6 @@
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -452,15 +419,8 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-15 {
     opacity: 15%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .max-xl\:grid-cols-3 {
     @media (width < 80rem) {
@@ -485,11 +445,6 @@
   .max-lg\:h-110 {
     @media (width < 64rem) {
       height: calc(var(--spacing) * 110);
-    }
-  }
-  .max-lg\:w-15 {
-    @media (width < 64rem) {
-      width: calc(var(--spacing) * 15);
     }
   }
   .max-lg\:w-20 {
@@ -525,11 +480,6 @@
   .max-lg\:text-\[12px\] {
     @media (width < 64rem) {
       font-size: 12px;
-    }
-  }
-  .max-lg\:text-\[14px\] {
-    @media (width < 64rem) {
-      font-size: 14px;
     }
   }
   .max-lg\:text-\[22px\] {
@@ -572,11 +522,6 @@
       width: calc(var(--spacing) * 15);
     }
   }
-  .max-md\:w-20 {
-    @media (width < 48rem) {
-      width: calc(var(--spacing) * 20);
-    }
-  }
   .max-md\:w-80 {
     @media (width < 48rem) {
       width: calc(var(--spacing) * 80);
@@ -612,16 +557,6 @@
       font-size: 8px;
     }
   }
-  .max-md\:text-\[9px\] {
-    @media (width < 48rem) {
-      font-size: 9px;
-    }
-  }
-  .max-md\:text-\[10px\] {
-    @media (width < 48rem) {
-      font-size: 10px;
-    }
-  }
   .max-md\:text-\[16px\] {
     @media (width < 48rem) {
       font-size: 16px;
@@ -637,24 +572,9 @@
       font-size: 22px;
     }
   }
-  .max-sm\:visible {
-    @media (width < 40rem) {
-      visibility: visible;
-    }
-  }
   .max-sm\:mt-8 {
     @media (width < 40rem) {
       margin-top: calc(var(--spacing) * 8);
-    }
-  }
-  .max-sm\:ml-20 {
-    @media (width < 40rem) {
-      margin-left: calc(var(--spacing) * 20);
-    }
-  }
-  .max-sm\:block {
-    @media (width < 40rem) {
-      display: block;
     }
   }
   .max-sm\:hidden {
@@ -662,29 +582,9 @@
       display: none;
     }
   }
-  .max-sm\:h-1 {
-    @media (width < 40rem) {
-      height: calc(var(--spacing) * 1);
-    }
-  }
-  .max-sm\:h-10 {
-    @media (width < 40rem) {
-      height: calc(var(--spacing) * 10);
-    }
-  }
   .max-sm\:h-16 {
     @media (width < 40rem) {
       height: calc(var(--spacing) * 16);
-    }
-  }
-  .max-sm\:h-18 {
-    @media (width < 40rem) {
-      height: calc(var(--spacing) * 18);
-    }
-  }
-  .max-sm\:h-30 {
-    @media (width < 40rem) {
-      height: calc(var(--spacing) * 30);
     }
   }
   .max-sm\:h-40 {
@@ -702,39 +602,9 @@
       height: calc(var(--spacing) * 70);
     }
   }
-  .max-sm\:w-0 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 0);
-    }
-  }
-  .max-sm\:w-3 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 3);
-    }
-  }
-  .max-sm\:w-15 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 15);
-    }
-  }
-  .max-sm\:w-18 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 18);
-    }
-  }
-  .max-sm\:w-30 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 30);
-    }
-  }
   .max-sm\:w-32 {
     @media (width < 40rem) {
       width: calc(var(--spacing) * 32);
-    }
-  }
-  .max-sm\:w-40 {
-    @media (width < 40rem) {
-      width: calc(var(--spacing) * 40);
     }
   }
   .max-sm\:w-70 {
@@ -772,21 +642,6 @@
       flex-direction: column-reverse;
     }
   }
-  .max-sm\:justify-end {
-    @media (width < 40rem) {
-      justify-content: flex-end;
-    }
-  }
-  .max-sm\:justify-start {
-    @media (width < 40rem) {
-      justify-content: flex-start;
-    }
-  }
-  .max-sm\:justify-items-start {
-    @media (width < 40rem) {
-      justify-items: start;
-    }
-  }
   .max-sm\:text-\[14px\] {
     @media (width < 40rem) {
       font-size: 14px;
@@ -805,11 +660,6 @@
   .max-sm\:text-\[40px\] {
     @media (width < 40rem) {
       font-size: 40px;
-    }
-  }
-  .sm\:hidden {
-    @media (width >= 40rem) {
-      display: none;
     }
   }
 }
@@ -868,11 +718,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -888,7 +733,6 @@
       --tw-gradient-to-position: 100%;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
